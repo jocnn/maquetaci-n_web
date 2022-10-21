@@ -9,6 +9,10 @@
 	padding-bottom: 2rem;
 }
 
+.contacto p {
+	margin-bottom: 1.5rem;
+}
+
 .contacto__titulo {
 	color: var(--fuente-ceniza-oscuro);
 	font-weight: 700;
