@@ -1,20 +1,14 @@
 .head {
-	color: var(--background-blanco);
-
-	width: 100%;
-
+	align-items: center;
+	border-bottom: 1px solid var(--border-cabecera-mobile);
 	box-sizing: border-box;
-
+	color: var(--background-blanco);
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-
 	padding-top: 0.75rem;
 	padding-bottom: 0.75rem;
-
-	border-bottom: 1px solid var(--border-cabecera-mobile);
-
 	position: absolute;
+	width: 100%;
 }
 
 .head__logo {
@@ -26,11 +20,17 @@
 }
 
 .head__enlace {
-	font-size: 1.1rem;
-
 	display: inline-block;
-
-	margin-right: 0.7rem;
+	font-size: 1.1rem;
 	margin-bottom: 0.7rem;
 	margin-left: 0.7rem;
+	margin-right: 0.7rem;
+}
+
+@media screen and (min-width: 1024px) {
+	.head {
+		border: none;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 }
